@@ -1,0 +1,30 @@
+<html>
+    <head>
+        <title>LAB 03</title>
+        <link rel="stylesheet" href="style.css" />
+        <script src="script.js"></script>
+    </head>
+    <body>
+    <h1> LAB 03 </h1>
+	<p>Answers for the lab3 exercises </p>
+        <ul>
+            <li> 3.1 </li>
+            <ul> 
+                <li> a. Node.js is the platform for building a server-side js web app.  Express.js is a framework build on top of Node.js.  It has extra features and can make things easier.</li> 
+                <li> b.The package.json file will give information to npm for the specific project and its dependencies.</li>
+            </ul>
+            <li> 3.2 </li>
+            <ul>
+                <li> a. These files are "static" because they are not being modified or generated as they are loaded. </li>
+                <li> b. The server does not serve up the hello-world message.  This is because it is serving it up the the main route ("/") but when the server laods the static file it is overwriting that message with the content form the file it is laoding. </li>
+            </ul>
+            <li> 3.3 </li>
+            <ul>
+                <li> When going to localhost:3000/hello.html, the page loads hello.html (5ms) style.css (2ms) script.js (2ms) express.png (2ms) </li>
+                <li> The message is logged to the console as soon as the script.js file is loaded. </li>
+            </ul>
+        </ul>
+        <img src="express.png" />
+        <a href="http://expressjs.com/en/starter/static-files.html"> Visit Express for more info </a>
+    </body>
+</html>

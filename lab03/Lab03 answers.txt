@@ -1,0 +1,10 @@
+Lab03 answers.txt
+
+3.1
+ a. Node.js is the platform for building a server-side js web app.  Express.js is a framework build on top of Node.js.  It has extra features and can make things easier.
+ b. The package.json file will give information to npm for the specific project and its dependencies.
+ 
+
+3.2
+	a. These files are "static" because they can't be modified once they are loaded.
+	b. The server does not serve up the hello-world message.  This is because it is serving it up the the main route ("/") but not to my ("/static.txt") page.
