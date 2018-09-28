@@ -1,0 +1,104 @@
+/*** Style for doc3.html (Tables) ***/
+#border {
+  border: 2px solid blue;
+  padding: 10px;
+  float: left;
+}
+
+#demo-table {
+  font: 100% sans-serif;
+  background-color: #efe;
+  border-collapse: collapse;
+  empty-cells: show;
+  border: 1px solid #7a7;
+}
+
+#demo-table > caption {
+  caption-side: bottom;
+  text-align: right;
+  border-top: .2em solid #4ca;
+  margin-top: .5em;
+}
+
+
+/* basic shared rules */
+#demo-table th,
+#demo-table td {
+  text-align: right;
+  padding-right: .5em;
+}
+
+#demo-table th {
+  font-weight: bold;
+  padding-left: .5em;
+}
+
+
+/* header */
+#demo-table > thead > tr:first-child > th {
+  text-align: center;
+  color: blue;
+}
+
+#demo-table > thead > tr + tr > th {
+  font-style: italic;
+  color: gray;
+
+}
+
+#demo-table thead tr {
+  border: 1px solid gray;
+}
+
+#demo-table thead th {
+  border: 1px solid gray;
+}
+
+/* fix size of superscript */
+#demo-table sup {
+  font-size: 75%;
+}
+
+/* body */
+#demo-table td {
+  background-color: #cef;
+  padding:.5em .5em .5em 3em;
+}
+
+#demo-table tbody th:after {
+  content: ":";
+}
+
+
+#demo-table tbody td {
+  border:1px solid #7a7;
+}
+
+#demo-table tbody tr {
+  border:1px solid gray;
+}
+
+
+/* footer */
+#demo-table tfoot {
+  font-weight: bold;
+}
+
+
+#demo-table tfoot th {
+  color: blue;
+  border: 1px solid gray;
+}
+
+#demo-table tfoot th:after {
+  content: ":";
+}
+
+#demo-table > tfoot td {
+  background-color: #cee;
+  border: 1px solid gray;
+}
+
+#demo-table > tfoot > tr:first-child td {
+  border-top: .2em solid #7a7;
+}
