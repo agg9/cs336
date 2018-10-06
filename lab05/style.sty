@@ -1,0 +1,97 @@
+cs-padding = 15px;
+cs-border-width = 1px;
+cs-border-color = black;
+cs-margin = 0px;
+
+body
+  font: 24px Helvetica
+  background: #999999
+
+
+#main
+  min-height: 800px
+  margin: cs-margin
+  padding: 0px
+  display: flex
+  flex-flow: row
+
+  article
+    margin: cs-margin
+    padding: cs-padding
+    border: cs-border-width solid cs-border-color
+    background: #dddd88
+    flex: 3 1 60%
+    order: 2
+    ont-family: "Times new Roman"
+    font-size: 40pt
+
+  nav
+    margin: cs-margin
+    padding: cs-padding
+    background: #ccccff
+    flex: 1 6 20%
+    order: 1
+    border: cs-border-width solid cs-border-color
+    text-align: right
+
+  aside
+    margin: cs-margin
+    padding: cs-padding
+    background: #ccccff
+    flex: 1 6 20%
+    order: 3
+    border: cs-border-width solid cs-border-color
+    font: sans-serif
+    font-style: italic
+    font-size: 30pt
+
+ul
+  list-style: none
+
+header
+  line-height: 100px
+  font-family: "Arial"
+  font-size: 40pt
+  font-weight: bold
+footer 
+  font: serif
+  font-style: normal
+  font-size: 15pt
+
+// These are the shared styles for the header and footer
+header, footer
+  display: block
+  margin: cs-margin
+  padding: cs-padding
+  vertical-align: middle
+  min-height: 100px
+  background: #ffeebb
+  border: cs-border-width solid cs-border-color
+
+
+// This media query is applied when the width of the browser's viewport is less
+// than or equal to 640px, the size that generally denotes a mobile phone browser
+@media all and (max-width: 640px)
+  #main, #page
+    flex-direction: column
+
+  // Change some of the styles for the main content wrapper
+  #main
+    article, nav, aside
+      // Return them to document order
+      order: 0
+      font-size: 30pt
+
+    nav, aside, header, footer
+      min-height: 50px
+      font-size: 12pt
+
+    nav
+      text-align: left
+      order: -1
+
+
+  header
+    line-height: 50px
+    font-size: 18pt
+   
