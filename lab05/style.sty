@@ -1,3 +1,4 @@
+//no margins to keep the flexboxes next to eachother
 cs-padding = 15px;
 cs-border-width = 1px;
 cs-border-color = black;
@@ -58,7 +59,7 @@ footer
   font-style: normal
   font-size: 15pt
 
-// These are the shared styles for the header and footer
+
 header, footer
   display: block
   margin: cs-margin
@@ -69,8 +70,7 @@ header, footer
   border: cs-border-width solid cs-border-color
 
 
-// This media query is applied when the width of the browser's viewport is less
-// than or equal to 640px, the size that generally denotes a mobile phone browser
+//for smaller windows such as viewing from a phone.  The webpage will need to reformat or be responsive
 @media all and (max-width: 640px)
   #main, #page
     flex-direction: column
