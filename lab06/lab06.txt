@@ -1,0 +1,29 @@
+Austin Gibson
+lab06 text file
+
+6.1 Answers
+a.
+Successful commands
+
+curl -X GET http://localhost:3000/request
+
+curl -X POST http://localhost:3000/request -d '{"arg": "POST"}' -H 'Content-Type: application/json'
+
+curl -X PUT http://localhost:3000/request -d '{"arg": "PUT"}' -H 'Content-Type: application/json'
+
+curl -X DELETE http://localhost:3000/request -d '{"arg": "DELETE"}' -H 'Content-Type: application/json'
+
+CHROME GET and POST
+
+FOR HEAD:
+	this didn't work: curl [--head] http://localhost:3000/request
+		-gave me some bad range error
+	this did: curl -I http://localhost:3000/request
+
+b.  The most appropriate HTTP response would be a NOT_FOUND
+
+
+6.2
+a. Both GET and POST methods support forms
+b. The data is being passed back to the server in JSON format and takes key value pairs form.  The data is not being modified
+
