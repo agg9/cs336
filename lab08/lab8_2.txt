@@ -1,0 +1,24 @@
+Austin Gibson Lab08 answers
+
+A. Explain:
+
+	i. The UI is composable because it is made of multiple components.  This matters because it simplifies things.
+
+	ii. JSX adds XML syntax to javascript.
+
+	iii. React escapes everything for you.  So you cannot insert markup because the elements wouldn't be in the render().
+
+	iv. Comments are create after a user enters in the component and an OnChange fires and the state of the component is modified.  To save this, an AJAX request is sent to the server.  The page reloads and the comment is loaded because the rendered value is updated to reflect the components state.
+
+	v. The state is mutable but props are immutable.  It matters because props are passed to the "child".  The parents state value becomes the childs prop.
+
+
+B. Consider the following, more detailed questions based on statements in the tutorial.
+
+	i. When done correctly, the page will add or remove the comment right away.
+
+	ii. The AJAX call is already rendering teh page so making a call to render() isn't needed.
+
+	iii. By requiring components to always represent the current state, the user will always see the newest version of the page.  
+
+	iv. It is not foolishness.  If the server did every reject a comment it would just be deleted anyway and no harm would be done.
