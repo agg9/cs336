@@ -1,0 +1,43 @@
+<!---
+    Austin Gibson
+    CS336 Homework2
+    addPerson gets data for a new person from the user and sends it to server
+-->
+
+
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>New Person</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="//code.jquery.com/jquery-latest.min.js"></script>
+    <script src="//code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src="addPerson.js"></script>
+
+</head>
+<body>
+    <h1> Add a New Person </h1>
+    <form>
+        <div>
+            <label for="loginID">Login ID: </label>
+            <input type="text" id= "loginID" name= "loginID" placeholder="login ID" required="true">
+        </div>
+            <label for="firstName">First Name: </label>
+            <input type="text" id= "firstName" name= "firstName" placeholder="first name" required="true">
+        <div>
+        </div>
+            <label for="lastName">Last Name: </label>
+            <input type="text" id= "lastName" name= "lastName" placeholder="last name" required="true"><br>
+        <div>
+        </div>
+        <div>
+            <label for="startDate">Start Date: dd/mm/yyyy </label>
+            <input type="text" id= "startDate" name= "startDate" required="true">
+        </div>
+        
+        <button id="submitButton"> Add New Person </button>
+    </form>
+    
+</body>
+</html>
