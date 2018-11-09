@@ -12,4 +12,4 @@ for doing assignments and studying. This project could be a good tool for studen
 all grade levels to use.
 
 
-Preferred Partners: None
+Preferred Partners: No preference.  I don't know anyone
