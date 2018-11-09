@@ -1,0 +1,23 @@
+10.1 Questions
+	Compare and contrast MongoDB and the SQL databases you’ve used before. Are 
+		there things that one can do that the other can’t?
+	- Both databases are fairly easy to use and maintain dat.  One main difference if that in the SQL databases, data has been in row, column format.  But in
+		the mongoDB it is in key value pairs. Also, the mongoDB schema is dynamic.   
+
+	You could run MongoDB locally. What advantages and/or disadvantages 
+		would that bring with respect to the cloud database you have now?
+	- One advantage would be that it would be fast, however any other applications
+		would be unable to access the database.
+
+	You’ve built a “sandbox” database on mLab. Could you use this for a 
+		production database? Why or why not?
+	-No it is not.  First of all, it doesn't hold a lot of space.  The performance for a 
+		production probably wouldn't be good and the security isn't that strict for the sandbox.
+
+10.2 Questions
+	For this integration of mLab into your application, was it better to run the modified server (npm start) or the full Webpack development environment (npm run dev)? Why?
+		-NPM start.  Whenever i use npm run dev, I get errors.
+	Explain what happens when you modify the database using mLab’s web interface rather than your application? Try adding/updating/deleting comment documents.
+		-It updates the app after about 2 - 3 seconds.  It is slower than using the application.
+	Is this comments application the sort of application that should use an SQL or a noSQL database? Explain your answer.
+		-noSQL.  when using comments we don't need a relational database.  Using a noSQL will be easier for this type of application as well as perform better.
