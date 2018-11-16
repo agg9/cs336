@@ -1,6 +1,14 @@
+Austin Gibson
 lab11.txt file for answers
 
 11.1 Questions
 	Compare and contrast your development and production deployments and explain how each is designed.
-	
+	-The development deployments runs a local dev server.  The application can only be accessed locally and uses npm run dev to run it.  The production deployment is deployed through Heroku, and can be accessed by anyone.  It is always running and built based on code in github.
 	List the optimizations you’ve configured for this production version and, if possible, find evidence of then in the deployed application files.
+	- OccurenceOrderPlugin and Uglification.
+
+11.2 Questions
+	What advantage is there is deploying an application to a PaaS tool like Heroku?
+	- The advantage is that Heroku does the heavy lifting by hosting our site, all we have to do is build the application and don't have to worry about hosting a server.
+	How does Heroku know how to install and run your application (after pulling it from the specified branch on GitHub)?
+	-Based on the config we set up.
