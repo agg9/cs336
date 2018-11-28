@@ -9,7 +9,7 @@ var express = require('express');
 var bodyParser = require('body-parser');
 var app = express();
 
-var COMMENTS_FILE = path.join(__dirname, 'comments.json');
+//var COMMENTS_FILE = path.join(__dirname, 'comments.json');
 
 var MongoClient = require('mongodb').MongoClient
     , assert = require('assert');
